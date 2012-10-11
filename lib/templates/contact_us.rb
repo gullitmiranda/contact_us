@@ -19,6 +19,9 @@ ContactUs.setup do |config|
   # Configure the form to ask for a subject.
   config.require_subject = false
 
+  # Configure the form to ask for a subject.
+  config.require_phone = false
+
   # Configure the form gem to use.
   # Example:
   # config.form_gem = 'formtastic

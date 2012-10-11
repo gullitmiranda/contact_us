@@ -23,3 +23,4 @@ es:
     notices:
       error: "Debes de ingresar ambos campos."
       success: "El correo electrónico de contacto fue enviado con éxito."
+  required: Obligatorio

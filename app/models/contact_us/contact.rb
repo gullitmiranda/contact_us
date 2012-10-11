@@ -2,7 +2,7 @@ class ContactUs::Contact
   include ActiveModel::Conversion
   include ActiveModel::Validations
 
-  attr_accessor :email, :message, :name, :subject
+  attr_accessor :email, :phone, :message, :name, :subject
 
   validates :email,   :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i },
                       :presence => true
@@ -27,5 +27,4 @@ class ContactUs::Contact
   def persisted?
     false
   end
-
 end
