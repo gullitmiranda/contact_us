@@ -23,12 +23,10 @@
     <%= f.label :email, (t('.email') + content_tag(:abbr, ' *', { :title => I18n.t(:required), :class => 'required' })).html_safe %>
     <%= f.text_field :email, :class => 'text_field span5' %>
   </div>
-  <% if ContactUs.require_phone %>
-    <div class="control-group">
-      <%= f.label :phone, (t('.phone')).html_safe %>
-      <%= f.text_field :phone, :class => 'text_field span5' %>
-    </div>
-  <% end %>
+  <div class="control-group">
+    <%= f.label :phone, (t('.phone')).html_safe %>
+    <%= f.text_field :phone, :class => 'text_field span5' %>
+  </div>
   <% if ContactUs.require_subject %>
     <div class="control-group">
       <%= f.label :subject, (t('.subject') + content_tag(:abbr, ' *', { :title => I18n.t(:required), :class => 'required' })).html_safe %>

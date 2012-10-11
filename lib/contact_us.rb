@@ -10,9 +10,6 @@ module ContactUs
   # Enable or Disable name field.
   mattr_accessor :require_name
 
-  # Enable or Disable phone field.
-  mattr_accessor :require_phone
-
   # Enable or Disable subject field.
   mattr_accessor :require_subject
 
