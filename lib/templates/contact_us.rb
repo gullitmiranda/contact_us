@@ -17,10 +17,10 @@ ContactUs.setup do |config|
   config.require_name = false
 
   # Configure the form to ask for a subject.
-  config.require_subject = false
+  config.require_phone = false
 
   # Configure the form to ask for a subject.
-  config.require_phone = false
+  config.require_subject = false
 
   # Configure the form gem to use.
   # Example:

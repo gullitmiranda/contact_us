@@ -14,11 +14,13 @@ describe ContactUs::Contact do
 
       after do
         ContactUs.require_name = false
+        ContactUs.require_phone = false
         ContactUs.require_subject = false
       end
 
       before do
         ContactUs.require_name = true
+        ContactUs.require_phone = true
         ContactUs.require_subject =true
       end
 

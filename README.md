@@ -49,6 +49,7 @@ The generator copies the view files to `app/views/contact_us`, and you can custo
 set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
 
     config.require_name = true
+    config.require_phone = true
     config.require_subject = true
 
 You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.

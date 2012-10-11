@@ -7,6 +7,7 @@ describe 'Contact Us page' do
     ContactUs.mailer_from = nil
     ContactUs.mailer_to = nil
     ContactUs.require_name = false
+    ContactUs.require_phone = false
     ContactUs.require_subject = false
   end
 
@@ -83,6 +84,7 @@ describe 'Contact Us page' do
 
     before do
       ContactUs.require_name = true
+      ContactUs.require_phone = true
       ContactUs.require_subject = true
       visit contact_us_path
     end

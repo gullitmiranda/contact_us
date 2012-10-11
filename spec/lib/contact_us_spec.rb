@@ -6,6 +6,7 @@ describe ContactUs do
     ContactUs.mailer_from = nil
     ContactUs.mailer_to = nil
     ContactUs.require_name = false
+    ContactUs.require_phone = false
     ContactUs.require_subject = false
   end
 
@@ -39,6 +40,13 @@ describe ContactUs do
     it 'should be configurable' do
       ContactUs.require_name = true
       ContactUs.require_name.should eql(true)
+    end
+  end
+
+  describe 'require_phone' do
+    it 'should be configurable' do
+      ContactUs.require_phone = true
+      ContactUs.require_phone.should eql(true)
     end
   end
 
