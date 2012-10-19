@@ -12,7 +12,7 @@ ContactUs.setup do |config|
   config.mailer_to = "contato@requestdev.com.br"
 
   # Contact_us and newsletter email
-  mails_to = {
+  config.mails_to = {
     :contact    => ENV['CONTACT_MAILER_TO'],
     :newsletter => ENV['NEWSLETTER_MAILER_TO']
   }
