@@ -9,7 +9,13 @@ ContactUs.setup do |config|
   config.mailer_from = nil
 
   # Configure the e-mail address which should receive the contact form email notifications.
-  config.mailer_to = "contact@please-change-me.com"
+  config.mailer_to = "contato@requestdev.com.br"
+
+  # Contact_us and newsletter email
+  mails_to = {
+    :contact    => ENV['CONTACT_MAILER_TO'],
+    :newsletter => ENV['NEWSLETTER_MAILER_TO']
+  }
 
   # ==> Form Configuration
 

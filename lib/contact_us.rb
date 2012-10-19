@@ -7,6 +7,9 @@ module ContactUs
   # Address to send ContactUs email notifications to.
   mattr_accessor :mailer_to
 
+  # Contact_us and newsletter email
+  mattr_accessor :mails_to
+
   # Enable or Disable name field.
   mattr_accessor :require_name
 
