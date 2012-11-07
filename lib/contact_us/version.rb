@@ -1,3 +1,3 @@
 module ContactUs
-  VERSION = "0.4.1.beta"
+  VERSION = "0.4.0"
 end
